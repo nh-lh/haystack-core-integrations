@@ -1,12 +1,42 @@
 # Changelog
 
-## [unreleased]
+## [integrations/opensearch-v0.9.0] - 2024-08-01
+
+### 🚀 Features
+
+- Support aws authentication with OpenSearchDocumentStore (#920)
+
+## [integrations/opensearch-v0.8.1] - 2024-07-15
+
+### 🚀 Features
+
+- Add raise_on_failure param to OpenSearch retrievers (#852)
+- Add filter_policy to opensearch integration (#822)
+
+### 🐛 Bug Fixes
+
+- `OpenSearch` - Fallback to default filter policy when deserializing retrievers without the init parameter (#895)
+
+### ⚙️ Miscellaneous Tasks
+
+- Update ruff invocation to include check parameter (#853)
+
+## [integrations/opensearch-v0.7.1] - 2024-06-27
+
+### 🐛 Bug Fixes
+
+- Serialization for custom_query in OpenSearch retrievers (#851)
+- Support legacy filters with OpenSearchDocumentStore (#850)
+
+## [integrations/opensearch-v0.7.0] - 2024-06-25
 
 ### 🚀 Features
 
 - Defer the database connection to when it's needed (#753)
 - Improve `OpenSearchDocumentStore.__init__` arguments (#739)
 - Return_embeddings flag for opensearch (#784)
+- Add create_index option to OpenSearchDocumentStore (#840)
+- Add custom_query param to OpenSearch retrievers (#841)
 
 ### 🐛 Bug Fixes
 
@@ -20,6 +50,10 @@ This PR will also push the docs to Readme
 - Fixing opensearch docstrings (#521)
 - Small consistency improvements (#536)
 - Disable-class-def (#556)
+
+### ⚙️ Miscellaneous Tasks
+
+- Retry tests to reduce flakyness (#836)
 
 ### Opensearch
 
